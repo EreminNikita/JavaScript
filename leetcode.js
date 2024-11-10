@@ -1,3 +1,4 @@
+// ! 35. Search Insert Position
 /* function binarySearch(arr, target) {
     let left = 0;
     let right = arr.length - 1;
@@ -13,21 +14,6 @@
             right = mid - 1
         }
     }
-    return 'No'
+    console.log(left);
 }
-
-console.log(binarySearch([1,2,3,4,5], 7)); */
-
-function binarySearch(arr, target) {
-    let left = 0;
-    let right = arr.length - 1;
-
-    while (left <= right) {
-        const mid = Math.floor((left + right) / 2)
-
-        if (arr[mid] === target) {
-            console.log();
-            
-        }
-    }
-}
+console.log(binarySearch([1,2,4,5], 6)); */
