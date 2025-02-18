@@ -414,7 +414,7 @@ digitize(35231);*/
 
 // !8 Return the day
 
-function whatday(num) { 
+/* function whatday(num) {
   switch (num) {
     case 1:
       return "Sunday";
@@ -435,4 +435,43 @@ function whatday(num) {
   }
 }
 
-console.log(whatday(7));
+console.log(whatday(7)); */
+
+
+// !8 Unfinished Loop - Bug Fixing #1
+
+/* function createArray(number) {
+  const newArray = [];
+  for (let counter = 1; counter <= number; counter++) {
+      newArray.push(counter);
+  }
+  return newArray;
+}
+
+console.log(createArray(3)); */
+
+
+// !8 Polish alphabet
+
+/* function replacePolishLetters(input) {
+  // Создаем объект для сопоставления польских букв с их заменами
+  const polishLetters = {
+      'ą': 'a',
+      'ć': 'c',
+      'ę': 'e',
+      'ł': 'l',
+      'ń': 'n',
+      'ó': 'o',
+      'ś': 's',
+      'ź': 'z',
+      'ż': 'z'
+  };
+
+  // Заменяем каждую польскую букву в строке
+  return input
+      .split('') // Разбиваем строку на массив символов
+      .map(char => polishLetters[char] || char) // Заменяем символ, если он есть в объекте
+      .join(''); // Собираем массив обратно в строку
+}
+
+console.log(replacePolishLetters("ściana")); */
