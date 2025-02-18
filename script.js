@@ -453,7 +453,7 @@ console.log(createArray(3)); */
 
 // !8 Polish alphabet
 
-/* function replacePolishLetters(input) {
+function replacePolishLetters(input) {
   // Создаем объект для сопоставления польских букв с их заменами
   const polishLetters = {
       'ą': 'a',
@@ -474,4 +474,4 @@ console.log(createArray(3)); */
       .join(''); // Собираем массив обратно в строку
 }
 
-console.log(replacePolishLetters("ściana")); */
+console.log(replacePolishLetters("ściana"));
