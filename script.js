@@ -453,7 +453,7 @@ console.log(createArray(3)); */
 
 // !8 Polish alphabet
 
-function replacePolishLetters(input) {
+/* function replacePolishLetters(input) {
   // Создаем объект для сопоставления польских букв с их заменами
   const polishLetters = {
       'ą': 'a',
@@ -474,4 +474,31 @@ function replacePolishLetters(input) {
       .join(''); // Собираем массив обратно в строку
 }
 
-console.log(replacePolishLetters("ściana"));
+console.log(replacePolishLetters("ściana")); */
+
+
+// !8 Failed Sort - Bug Fixing #4
+
+/* var sortArray = function(value) {
+  return value.split('').sort((z, x) => Number(z) - Number(x)).join('');
+}
+
+console.log(sortArray('214365879')); */
+
+
+// !8 Switch/Case - Bug Fixing #6
+
+/* function evalObject(value) {
+  var result = 0;
+  switch (value.operation) {
+    case '+': result = value.a + value.b; break;
+    case '-': result = value.a - value.b; break;
+    case '/': result = value.a / value.b; break;
+    case '*': result = value.a * value.b; break;
+    case '%': result = value.a % value.b; break;
+    case '^': result = Math.pow(value.a, value.b); break;
+  }
+  return result;
+}
+
+console.log(evalObject({ a: 1, b: 3, operation: '+' })); */
