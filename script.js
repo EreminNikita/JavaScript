@@ -502,3 +502,25 @@ console.log(sortArray('214365879')); */
 }
 
 console.log(evalObject({ a: 1, b: 3, operation: '+' })); */
+
+
+// !8 String Templates - Bug Fixing #5
+
+/* function buildString(...template){
+  return `I like ${template.join(',')}!`;
+}
+
+console.log(buildString('JS')); */
+
+
+// !8 Multiplication table for number
+
+/* function multiTable(number) {
+  let results = [];
+  for (let index = 1; index <= 10; index++) {
+    results.push(`${index} * ${number} = ${index * number}`);
+  }
+  return results.join('\n');
+}
+
+console.log(multiTable(2)); */
