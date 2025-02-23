@@ -524,3 +524,26 @@ console.log(buildString('JS')); */
 }
 
 console.log(multiTable(2)); */
+
+
+// !8 No zeros for heroes
+
+function noBoringZeros(n) {
+  let numStr = n.toString();
+
+  let i = numStr.length - 1;
+  while (i > 0 && numStr[i] === '0') {
+    i--;
+  }
+
+  if (numStr === '0') {
+    return 0;
+  }
+
+  const resultStr = numStr.slice(0, i + 1);
+
+  return parseFloat(resultStr);
+}
+
+console.log(noBoringZeros(1450));
+console.log(noBoringZeros(960000));
