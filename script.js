@@ -528,7 +528,7 @@ console.log(multiTable(2)); */
 
 // !8 No zeros for heroes
 
-function noBoringZeros(n) {
+/* function noBoringZeros(n) {
   let numStr = n.toString();
 
   let i = numStr.length - 1;
@@ -546,4 +546,81 @@ function noBoringZeros(n) {
 }
 
 console.log(noBoringZeros(1450));
-console.log(noBoringZeros(960000));
+console.log(noBoringZeros(960000)); */
+
+
+// !8 Tip Calculator
+
+/* function calculateTip(totalBill, rating) {
+  const tipPercentages = {
+      "terrible": 0,
+      "poor": 5,
+      "good": 10,
+      "great": 15,
+      "excellent": 20
+  };
+
+  const normalizedRating = rating.toLowerCase();
+
+  if (!(normalizedRating in tipPercentages)) {
+      return "Rating not recognised";
+  }
+
+  const tipPercentage = tipPercentages[normalizedRating];
+  const tipAmount = (totalBill * tipPercentage) / 100;
+
+  const roundedTip = Math.ceil(tipAmount);
+
+  return roundedTip;
+}
+
+console.log(calculateTip(100, "Great")); // Output: 15
+console.log(calculateTip(150, "POOR"));  // Output: 8
+console.log(calculateTip(200, "Excellent")); // Output: 40
+console.log(calculateTip(50, "Average")); // Output: "Rating not recognised" */
+
+
+// !8 Sum of Multiples
+
+/* function sumMul(n, m) {
+  if (n <= 0 || m <= 0 || !Number.isInteger(n) || !Number.isInteger(m)) {
+    return "INVALID";
+  }
+
+  let sum = 0;
+
+  for (let i = n; i < m; i += n) {
+    sum += i;
+  }
+
+  return sum;
+}
+
+console.log(sumMul(2, 9));   // Output: 20 (2 + 4 + 6 + 8)
+console.log(sumMul(3, 13));  // Output: 30 (3 + 6 + 9 + 12)
+console.log(sumMul(4, 123)); // Output: 1860
+console.log(sumMul(4, -7));  // Output: "INVALID"
+console.log(sumMul(0, 10));  // Output: "INVALID"
+console.log(sumMul(5, 5));   // Output: 0 (нет чисел, кратных 5 и меньше 5) */
+
+
+// !8 Training JS #10: loop statement --for
+
+/* function pickIt(arr) {
+  let odd = [];
+  let even = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) { // Проверяем, является ли число чётным
+      even.push(arr[i]); // Если да, добавляем его в массив even
+    } else { // В противном случае число нечётное
+      odd.push(arr[i]); // Добавляем его в массив odd
+    }
+  }
+
+  return { odd: odd, even: even };
+}
+
+console.log(pickIt([1, 2, 3, 4, 5, 6]));
+
+console.log(pickIt([10, 23, 35, 44, 55])) */
