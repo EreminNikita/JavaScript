@@ -624,3 +624,21 @@ console.log(sumMul(5, 5));   // Output: 0 (нет чисел, кратных 5 �
 console.log(pickIt([1, 2, 3, 4, 5, 6]));
 
 console.log(pickIt([10, 23, 35, 44, 55])) */
+
+
+/* const nameShuffler = (str) => {
+    return str.split(" ").reverse().join(" ");
+}
+console.log(nameShuffler('nikita E')); */
+
+
+/* function contamination(text, char) {
+    return text.replace(/ /g, char)
+}
+console.log(contamination('nikita', '')); */
+
+
+/* function formatMoney(amount){
+    return `$${amount.toFixed(2)}`;
+}
+console.log(formatMoney(3.)); */
