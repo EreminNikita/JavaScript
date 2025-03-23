@@ -642,3 +642,101 @@ console.log(contamination('nikita', '')); */
     return `$${amount.toFixed(2)}`;
 }
 console.log(formatMoney(3.)); */
+
+/* function billboard(name, price = 30) {
+    return name.length * price;
+}
+console.log(billboard('niki'));
+
+// ! рекурсия
+function billboard(name, price = 30) {
+    if (name.length === 0) return 0;
+    return price + billboard(name.slice(1), price);
+}
+ */
+
+/* function repeatString(n, s) {
+    if (n === 0) {
+      return "";
+    }
+    return s + repeatString(n - 1, s);
+  }
+  console.log(repeatString(2,'niki')); */
+
+/* String.prototype.isUpperCase = function () {
+        return this.valueOf() === this.toUpperCase();
+};
+console.log(String.prototype.isUpperCase('niki'));
+ */
+
+/* function stringClean(s) {
+    return s.replace(/\d/g, ''); // delet numbers
+}
+console.log(stringClean('n1k1'));
+ */
+
+/* function uefaEuro2016(teams, scores) {
+    if (scores[0] > scores[1]) {
+        return `At match ${teams[0]} - ${teams[1]}, ${teams[0]} won!`
+    }
+    else if (scores[0] < scores[1]) {
+        return `At match ${teams[0]} - ${teams[1]}, ${teams[1]} won!`
+    }
+    else {
+        return `At match ${teams[0]} - ${teams[1]}, teams played draw.`
+    }
+}
+console.log(uefaEuro2016(['Germany', 'Ukraine'], [1,2])); */
+
+/* function isVow(a) {
+    const vowelCodes = {
+        97: 'a',
+        101: 'e',
+        105: 'i',
+        111: 'o',
+        117: 'u'
+    };
+
+    return a.map(num => vowelCodes[num] || num);
+}
+console.log(isVow([1,2,97,101])); */
+
+
+/* function check(a, x) {
+    return a.includes(x);
+  }
+console.log(check([1,2,3], 1)); */
+
+/* function reverseWords(str) {
+    const words = str.split(' ');
+    const reversedWords = words.reverse();
+    return reversedWords.join(' ');
+}
+console.log(reverseWords('niki e')); */
+
+/* function stringy(size) {
+    let result = ''; // Создаем пустую строку для результата
+    for (let i = 0; i < size; i++) { // Проходим по каждому индексу от 0 до size - 1
+        if (i % 2 === 0) { // Если индекс четный
+            result = result + '1'; // Добавляем '1' к результату
+        } else { // Если индекс нечетный
+            result = result + '0'; // Добавляем '0' к результату
+        }
+    }
+    return result; // Возвращаем собранную строку
+}
+console.log(stringy(2)); */
+
+function well(x) {
+    const words = x.filter(w => w === 'good')
+    if (words.length === 1 || words.length === 2) {
+        return 'Publish!';
+    }
+    else if (words.length > 2) {
+        return 'I smell a series!'
+    }
+    else {
+        return 'Fail!'
+    }
+}
+console.log(well(['good', 'good', 'good', 'bad']));
