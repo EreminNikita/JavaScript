@@ -727,7 +727,7 @@ console.log(reverseWords('niki e')); */
 }
 console.log(stringy(2)); */
 
-function well(x) {
+/* function well(x) {
     const words = x.filter(w => w === 'good')
     if (words.length === 1 || words.length === 2) {
         return 'Publish!';
@@ -739,4 +739,45 @@ function well(x) {
         return 'Fail!'
     }
 }
-console.log(well(['good', 'good', 'good', 'bad']));
+console.log(well(['good', 'good', 'good', 'bad'])); */
+
+/* function well(x) {
+    let goodCount = 0;
+
+    x.flat().forEach(idea => {
+        if (typeof idea === 'string' && idea.toLowerCase() === 'good') {
+            goodCount++;
+        }
+    });
+    if (goodCount === 0) {
+        return 'Fail!';
+    } else if (goodCount <= 2) {
+        return 'Publish!';
+    } else {
+        return 'I smell a series!';
+    }
+}
+console.log(well([['good', 'bad', 'BAD'], ['bad', 'bad', 'GOOD'], ['bad']]));
+console.log(well([['GOOD', 'bad'], ['gOOd', 'bad'], ['good', 'bad']]));
+console.log(well([['bad', 'BAD'], ['bad']]));  */
+
+/* function capitalizeWord(word) {
+    return word[0].toUpperCase() + word.slice(1);
+}
+console.log(capitalizeWord('niki')); */
+
+/* function sayHello(name, city, state) {
+    const fullName = name.join(' ')
+    return `Hello, ${fullName}! Welcome to ${city}, ${state}!`;
+}
+console.log(sayHello(['Nikita', 'Eremin'], 'Saratov', 'Russia')); */
+
+/* function solution(a, b) {
+    if (a.length > b.length) {
+        return b+a+b;
+    }
+    else if (a.length < b.length) {
+        return a+b+a;
+    }
+};
+console.log(solution('00', '1')); */
